@@ -23,7 +23,9 @@ git clone https://github.com/scbushan05/spring-boot-hibernate-mysql-rest-api.git
 **2. Create MySQL database**
 
 ```sql
-CREATE DATABASE crudapi
+CREATE DATABASE crudapi;
+show databases;
+use crudapi;
 ```
 	
 **3. Create table or Run the SQL script file**
@@ -36,7 +38,13 @@ CREATE TABLE tbl_employee
     	gender VARCHAR(255),
     	department VARCHAR(255),
     	dob DATE
-)
+);
+
+show tables;
+describe tbl_employee;
+
+SELECT * FROM tbl_employee;
+
 ```
 	
 **4. Change MySQL Username and Password as per your MySQL Installation**
